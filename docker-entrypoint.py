@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
     cluster = get("http://localhost:51678/v1/metadata").json()['Cluster']
     containerInstanceArn = get("http://localhost:51678/v1/metadata").json()['ContainerInstanceArn']
-    print('ECS Cluster name: %', cluster)
-    print('ECS ContainerInstance arn: %', containerInstanceArn)
+    print('ECS Cluster name: %s', cluster)
+    print('ECS ContainerInstance arn: %s', containerInstanceArn)
 
     counter = 0
     while(True):
