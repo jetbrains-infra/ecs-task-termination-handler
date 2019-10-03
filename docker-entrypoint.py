@@ -25,7 +25,7 @@ if __name__ == '__main__':
         CPUregisteredResources = next(item for item in registeredResources if item["name"] == "CPU")
         CPUremainingResources = next(item for item in remainingResources if item["name"] == "CPU")
 
-        if CPUregisteredResources == CPUremainingResources:
+        if CPUregisteredResources['integerValue'] == CPUremainingResources['integerValue']:
             print('No instance tasks')
             counter += 1
         else:
