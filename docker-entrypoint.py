@@ -1,3 +1,4 @@
+from requests import get
 from time import sleep
 import boto3
 
